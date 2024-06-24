@@ -37,7 +37,7 @@ jobs:
         pip install -r ./backend/requirements.txt 
     # Этот шаг дополним переменными для доступа к БД
     - name: Test with flake8 and django tests
-      # Добавляем env-переменные для доступа к БД
+      # Добавляем env-переменные для доступа к бд
       env:
         POSTGRES_USER: django_user
         POSTGRES_PASSWORD: django_password
